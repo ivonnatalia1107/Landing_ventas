@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&family=Prompt:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(190, 141, 174, 0.384);
+
+}
+
+header .navegador ul {
+    display: flex;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    list-style-type: none;
+}
+
+header .navegador a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+header .navegador a:hover {
+    color: rgb(194, 11, 130);
+}
+
+header .eslogan h2 {
+    font-family: 'Prompt', sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+header .logo img {
+    height: 100px;
+}
+
+@media screen and (max-width:800px){
+    header .navegador ul {
+        display:block;
+    }
+}
