@@ -6,13 +6,17 @@
     box-sizing: border-box;
 }
 
+/* CSS Header */
+
 header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
-    background-color: rgba(190, 141, 174, 0.384);
+    height: 180px;
+    color: rgb(84, 0, 46);
+    background-color: rgba(231, 196, 136, 0.242);
+
 
 }
 
@@ -24,9 +28,10 @@ header .navegador ul {
 
 header .navegador a {
     text-decoration: none;
-    color: black;
+    color: rgb(84, 0, 46);
     padding: 5px;
     font-weight: 800;
+    font-size: larger;
 }
 
 header .navegador a:hover {
@@ -37,50 +42,53 @@ header .eslogan h2 {
     font-family: 'Prompt', sans-serif;
     font-size: xx-large;
     font-style: italic;
+    font-weight: 900;
 }
 
 header .logo img {
-    height: 100px;
+    height: 180px;
 }
+
+/* CSS Jumbotron */
 
 main .jumbotron {
     display: grid;
+    justify-items: center;
+    align-items: center;
+    color: rgb(43, 1, 24);
     grid-template-columns: 50% 50%;
-
-
+    background-color: rgba(192, 180, 164, 0.062);
+    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.384), rgba(172, 158, 140, 0.384));
 }
 
 
 main .jumbotron .presentation {
-    
-    padding-top: 20px;
-    background-color: rgba(192, 180, 164, 0.384);
+
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: oblique;
-    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.384), rgba(172, 158, 140, 0.384));
     font-size: large;
-    
-   
+
+
 }
 
 main .jumbotron .img-presentacion {
-    background-color: rgba(192, 180, 164, 0.384);
-    display: flex;
-
+    padding: 1%;
 }
-
-main .jumbotron .img-presentacion img {
-    max-width: 100%;
-    height: 100%;
-
-}
-
-
 
 main .jumbotron .contact {
     padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+
+}
+
+main .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main .contact input {
@@ -92,13 +100,17 @@ main .contact input {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-main .contac #sent {
+main .form #sent {
     width: 30%;
-    background-color: rgb(6, 3, 8);
-    color: aliceblue;
+    align-self: center;
 
 }
 
+main .jumbotron .img-presentacion img {
+    max-width: 100%;
+    height: 100%;
+
+}
 
 .contact input:hover {
     background-color: rgb(191, 54, 118);
@@ -111,25 +123,75 @@ main .contac #sent {
     text-decoration: none;
 
 }
+
+/* CSS Presentation Showroom */
+
+main .presentation-showroom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+    font-size: large;
+    color: rgb(84, 0, 46);
+    font-weight: 900;
+    background-color: rgba(231, 196, 136, 0.242);
+}
+
+/* CSS Showroom */
+
 main .showroom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.384), rgba(172, 158, 140, 0.384));
-    background-color: rgba(192, 180, 164, 0.384);
-    
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: rgba(231, 196, 136, 0.242);
+
 }
+
 main .showroom .box img {
     width: 100%;
     border-radius: 1%;
     background-size: cover;
-    
+
 }
+
 main .showroom .box img:hover {
     transform: scale(1.1);
     transition: all 0.4s;
 }
 
+/* CSS About */
 
+main .about {
+
+    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.384), rgba(172, 158, 140, 0.384));
+    background-color: rgba(192, 180, 164, 0.384);
+
+}
+
+main .about .why {
+    border: 1px solid black;
+}
+
+main .about .steps
+
+main .about .steps .step1 {
+    border: 1px solid black;
+}
+
+main .about .steps .step2 {
+    border: 1px solid black;
+}
+
+main .about .steps .step3 {
+    border: 1px solid black;
+}
+
+main .about .steps .step4 {
+    border: 1px solid black;
+}
+
+/* Responsividad */
 
 @media screen and (max-width:700px) {
     header .navegador ul {
