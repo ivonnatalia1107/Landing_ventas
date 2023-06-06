@@ -68,12 +68,14 @@ main .jumbotron .presentation {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: oblique;
     font-size: large;
+    padding: 5%;
 
 
 }
 
-main .jumbotron .img-presentacion {
+main .jumbotron .img-presentacion img {
     padding: 1%;
+    border-radius: 10%;
 }
 
 main .jumbotron .contact {
@@ -162,34 +164,52 @@ main .showroom .box img:hover {
 
 /* CSS About */
 
-main .about {
-
-    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.384), rgba(172, 158, 140, 0.384));
-    background-color: rgba(192, 180, 164, 0.384);
-
-}
+/* Css Why */
 
 main .about .why {
-    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+    color: rgb(84, 0, 46);
+    font-weight: 900;
+    background-color: rgba(231, 196, 136, 0.242);
+    font-size: x-large;
+
 }
 
-main .about .steps
+/* Css Steps */
 
-main .about .steps .step1 {
-    border: 1px solid black;
+main .stepbystep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+    color: rgb(84, 0, 46);
+    font-weight: 900;
+    background-color: rgba(231, 196, 136, 0.242);
 }
 
-main .about .steps .step2 {
-    border: 1px solid black;
+main .stepbystep .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    width: 300px;
+    text-align: center;
+
 }
 
-main .about .steps .step3 {
-    border: 1px solid black;
+main .stepbystep .step img {
+    height: 150px;
 }
 
-main .about .steps .step4 {
-    border: 1px solid black;
-}
+
 
 /* Responsividad */
 
