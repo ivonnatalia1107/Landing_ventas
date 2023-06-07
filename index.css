@@ -17,7 +17,6 @@ header {
     color: rgb(84, 0, 46);
     background-color: rgba(231, 196, 136, 0.242);
 
-
 }
 
 header .navegador ul {
@@ -152,15 +151,11 @@ main .showroom {
 
 main .showroom .box img {
     width: 100%;
-    border-radius: 1%;
+    border-radius: 3%;
     background-size: cover;
 
 }
 
-main .showroom .box img:hover {
-    transform: scale(1.1);
-    transition: all 0.4s;
-}
 
 /* CSS About */
 
@@ -177,7 +172,7 @@ main .about .why {
     color: rgb(84, 0, 46);
     font-weight: 900;
     background-color: rgba(231, 196, 136, 0.242);
-    font-size: x-large;
+    font-size: large;
 
 }
 
@@ -210,18 +205,57 @@ main .stepbystep .step img {
     height: 150px;
 }
 
+/* CSS plus*/
+
+main .plus {
+    display: flex;
+    align-items: center;
+    background-color: rgba(6, 44, 67, 0.16);
+    padding: 20px;
+}
+
+main .plus img {
+    height: 280px;
+
+}
+
+main .plus .text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-style: italic;
+    font-family: 'Prompt', sans-serif;
+    color: black;
+    font-weight: 900;
+    width: 100%;
+    padding: 10px 10px 20px 15px;
+
+}
+
+main .plus .text p {
+    padding: 3px 0px 3px 0px;
+}
+
+main .plus .text ul {
+    padding: 3px 0px 3px 0px;
+}
+
+
+
 /*  CSS Footer */
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     font-family: 'Prompt', sans-serif;
     font-style: italic;
     color: rgb(43, 1, 24);
     font-weight: 900;
     background-color: rgba(187, 164, 133, 0.142);
     background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.13), rgba(172, 158, 140, 0.112));
+    padding: 20px;
 }
 
 /*  CSS Footer Logo */
@@ -240,9 +274,14 @@ footer .links {
 
 }
 
+
 footer .links .links-list ul {
     list-style-type: none;
     padding: 10px;
+}
+
+footer .links .links-list li {
+    padding: 3px;
 }
 
 footer .links .links-list a {
@@ -261,12 +300,12 @@ footer .links .links-list a:hover {
 footer .rrss {
     display: flex;
     flex-direction: column;
-    height: 180px;
     padding: 30px 20px 20px 10px;
 }
 
 footer .rrss .logo-text {
     display: flex;
+    align-items: center;
 }
 
 footer .rrss .logo-text img {
@@ -281,5 +320,117 @@ footer .rrss .logo-text img {
 @media screen and (max-width:700px) {
     header .navegador ul {
         display: block;
+    }
+
+    main .jumbotron .img-presentacion img {
+        display: none;
+    }
+
+    main .jumbotron {
+        display: flex;
+
+    }
+
+    main .plus {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    header .logo img {
+        height: 130px;
+    }
+
+    header .eslogan h2 {
+        font-size: x-large;
+        padding-left: 4px;
+    }
+
+    header .navegador a {
+        font-size: small
+    }
+
+
+    main .showroom {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    footer {
+
+        justify-content: center;
+
+    }
+
+    footer .links {
+
+        text-align: center;
+
+    }
+
+
+}
+
+@media screen and (min-width:1600px) {
+
+    header {
+        font-size: x-large;
+    }
+
+
+    main .showroom {
+
+        grid-template-columns: 33% 33% 33%;
+
+    }
+
+    main .presentation-showroom {
+
+        font-size: x-large;
+
+    }
+
+    main .jumbotron .presentation {
+
+        font-size: xx-large;
+
+
+    }
+
+    main .form input {
+        font-size: x-large;
+    }
+
+    main .about .why {
+
+        font-size: x-large;
+
+    }
+
+    main .stepbystep .step p {
+        font-size: x-large;
+    }
+
+    main .plus .text p {
+        font-size: x-large;
+    }
+
+    main .plus .text ul {
+        font-size: x-large;
+    }
+
+    footer .links .links-list a {
+
+        font-size: large;
+
+    }
+
+    footer .rrss .logo-text p {
+        font-size: large;
     }
 }
