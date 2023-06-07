@@ -114,13 +114,13 @@ main .jumbotron .img-presentacion img {
 
 }
 
-.contact input:hover {
+main .contact input:hover {
     background-color: rgb(191, 54, 118);
     text-decoration: none;
 
 }
 
-.contact #sent:hover {
+main .contact #sent:hover {
     background-color: rgb(191, 54, 118);
     text-decoration: none;
 
@@ -192,6 +192,7 @@ main .stepbystep {
     color: rgb(84, 0, 46);
     font-weight: 900;
     background-color: rgba(231, 196, 136, 0.242);
+    padding-bottom: 50px;
 }
 
 main .stepbystep .step {
@@ -207,6 +208,70 @@ main .stepbystep .step {
 
 main .stepbystep .step img {
     height: 150px;
+}
+
+/*  CSS Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Prompt', sans-serif;
+    font-style: italic;
+    color: rgb(43, 1, 24);
+    font-weight: 900;
+    background-color: rgba(187, 164, 133, 0.142);
+    background-image: linear-gradient(to bottom right, rgba(164, 89, 154, 0.13), rgba(172, 158, 140, 0.112));
+}
+
+/*  CSS Footer Logo */
+
+footer .logo-footer img {
+    height: 180px;
+}
+
+/*  CSS Footer Links */
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 180px;
+
+}
+
+footer .links .links-list ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer .links .links-list a {
+    text-decoration: none;
+    font-size: medium;
+    color: rgb(43, 1, 24);
+
+}
+
+footer .links .links-list a:hover {
+    color: rgb(218, 9, 144);
+}
+
+/*  CSS Footer rrss */
+
+footer .rrss {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    padding: 30px 20px 20px 10px;
+}
+
+footer .rrss .logo-text {
+    display: flex;
+}
+
+footer .rrss .logo-text img {
+    height: 50px;
+
 }
 
 
