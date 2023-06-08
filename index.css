@@ -42,6 +42,7 @@ header .eslogan h2 {
     font-size: xx-large;
     font-style: italic;
     font-weight: 900;
+    text-align: center;
 }
 
 header .logo img {
@@ -166,6 +167,7 @@ main .about .why {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     height: 100px;
     font-family: 'Prompt', sans-serif;
     font-style: italic;
