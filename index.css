@@ -230,11 +230,18 @@ main .plus .text {
     text-align: justify;
     font-style: italic;
     font-family: 'Prompt', sans-serif;
-    color: black;
-    font-weight: 400;
+    font-weight: 500;
     width: 100%;
     padding: 10px 10px 20px 15px;
 
+}
+
+main .plus .text .benefits {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 main .plus .text p {
@@ -246,6 +253,10 @@ main .plus .text ul {
 }
 main .plus .text ul li {
     font-weight: bolder;
+}
+
+main .plus .text h2 {
+    text-align: center;
 }
 
 
